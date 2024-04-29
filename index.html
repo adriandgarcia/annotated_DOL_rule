@@ -11,12 +11,18 @@
             margin: 0px;
             padding: 20px;
             min-width: 100%;
+            background-color:  #f0f0f5;
         }
 
-        p {
+        p, ul {
             margin-left: 10px;
             margin-right: 50px;
 
+        }
+
+
+        li{
+            margin-top: 10px;
         }
 
         .ag-text {
@@ -39,11 +45,11 @@
 
         .ag-annotation {
             width: 100%; /* Takes full width of the container */
-            padding-top: 10px; /* Adds padding at the top for spacing */
+            padding-left: 10px; /* Adds padding at the top for spacing */
             text-align: left;
             font-style: italic;
             color: #555; /* Color for the annotation text */
-            border-top: 2px solid #ccc; /* Visual separator */
+            border-left: 2px solid #ccc; /* Visual separator */
         }
 
         .ag-label {
@@ -64,8 +70,7 @@
         .ag-highlight {
             background-color: #ffff99; /* Highlight color */
             flex: 1; /* Takes up 50% of the container */
-            padding: 5px;
-            display: block;
+
         }
 
         /* Ensure elements that do not have highlight or annotation take full width */
@@ -82,32 +87,47 @@
     <div class="ag-text">
         <p class="ag-label">Executive Summary</p>
     </div>
-    <div>
+    <div class="ag-text">
         <p>
-            The Department is issuing a final rule defining an investment advice fiduciary for purposes of Title I and Title II of ERISA. The final rule defines when a person is a fiduciary in connection with providing advice to an investor saving for retirement through a workplace retirement plan or other type of retirement plan such as an IRA. Such retirement investors include participants and beneficiaries in workplace retirement plans, IRA owners and beneficiaries, as well as plan and IRA fiduciaries with authority or control with respect to the plan or IRA.
+            The Department is issuing a final rule defining an investment advice fiduciary for purposes of Title I and Title II of ERISA. The final rule defines when a person is a fiduciary in connection with providing advice to an investor saving for retirement through a workplace retirement plan or other type of retirement plan such as an IRA. <span class='ag-highlight'>Such retirement investors include participants and beneficiaries in workplace retirement plans, IRA owners and beneficiaries, as well as plan and IRA fiduciaries with authority or control with respect to the plan or IRA.</span>
+            <p class='ag-annotation'>The final summary text led with reference to IRA investors. The rule cites third quarter 2023 data from the Federal Reserve showing "IRAs held $13.0 trillion in assets, [while] private defined contribution plans held $8.4 trillion, and private defined benefit plans held $3.7 trillion in assets."
+            <br> <br>IRA investors are "projected to move $4.5 trillion from defined contribution plans to IRAs from 2022 through 2027," according to Cerulli data cited in the rule.</p>
         </p>
     </div>
         <p>
             Under the final rule, a person is an investment advice fiduciary if they provide a recommendation in one of the following contexts:
         </p>
-        <p>
-            The person either directly or indirectly (e.g., through or together with any affiliate) makes professional investment recommendations to investors on a regular basis as part of their business and the recommendation is made under circumstances that would indicate to a reasonable investor in like circumstances that the recommendation:
-        </p>
+
     <ul>
-        <li>
-            is based on review of the retirement investor's particular needs or individual circumstances,
+        <div class="ag-text">
+            <div>
+            <li>
+            The person either directly or indirectly (e.g., through or together with any affiliate) makes <span class="ag-highlight">professional</span> investment recommendations to investors on a regular basis as part of their business and the recommendation is made <span class="ag-highlight">under circumstances that would indicate to a reasonable investor</span> in like circumstances that the recommendation:
+        </li>
+            <li>
+            is based on <span class="ag-highlight">review</span> of the retirement investor's particular needs or individual circumstances,
         </li>
         <li>
-            reflects the application of professional or expert judgment to the retirement investor's particular needs or individual circumstances, and
+            reflects <span class="ag-highlight">the application of professional or expert judgment</span> to the retirement investor's particular needs or individual circumstances, and
         </li>
         <li>
-            may be relied upon by the retirement investor as intended to advance the retirement investor's best interest; or
+            may be relied upon by the retirement investor as intended <span class="ag-highlight">to advance the retirement investor's best interest</span>; or
         <ul>
             <li>
                 The person represents or acknowledges that they are acting as a fiduciary under Title I of ERISA, Title II of ERISA, or both with respect to the recommendation.
             </li>
         </ul>
         </li>
+    </div>
+    <div>
+            <p class='ag-annotation'>The final rule removed the need for an advisor to have "discretionary authority or control" over the "purchasing or selling securities or other investment property for the retirement investor." Instead regulators opted target those who make "professional" investment decisions.
+            <br><br>The DOL also added language to cover how "a resonalbe investor" may be receiivng advice.
+            <br><br>The final rule calls for a "review" of the investor's needs or circumstances.
+            <br><br>Language related to an advisor's "judgement" was also added.
+            <br><br>In the final rule, the recomendation no longer needs to be "a basis for investment decisions" but rather is intended to "advance" the investor's "best interest."
+            </p>
+        </div>
+        
     </ul>
         <p>
         The recommendation also must be provided &ldquo;for a fee or other compensation, direct or indirect&rdquo; as defined in the final rule.
@@ -136,7 +156,7 @@
         </p>
         </div>
     <div class="ag-text">
-        <p>2023 for notice and public comment, and public hearings on the proposals were held on December 12 and 13, 2023. The Department has made certain changes and clarifications in the final rule in response to public comments on the proposal and the testimony presented at the public hearings. The final rule narrows the contexts in which a covered recommendation will constitute ERISA fiduciary investment advice and makes clear that the test for fiduciary status is objective. Similarly, a new paragraph in the <span class='ag-highlight'>regulatory text confirms that sales recommendations that do not satisfy the objective test will not be treated as fiduciary advice, and that the mere provision of investment information or education, without an investment recommendation, is not advice within the meaning of the rule.</span><p class='ag-annotation'>Well here you see we hae a very long long long long long long long and tedious tedious tedoius annotations explaining the text</p></div><div><p>Additionally, the final rule makes clear that the rule is focused on communications with persons with authority over plan investment decisions (including selecting investment options for participant-directed plans), rather than communications with financial services providers who do not have such authority. Accordingly, the rule excludes plan and IRA investment advice fiduciaries from the definition of a retirement investor. As a result, an asset manager does not render fiduciary advice simply by making recommendations to a financial professional or firm that, in turn, will render advice to retirement investors in a fiduciary capacity. The Department believes the final rule, with these revisions, appropriately defines an investment advice fiduciary to comport with reasonable investor expectations of trust and confidence.</p>
+        <p>2023 for notice and public comment, and public hearings on the proposals were held on December 12 and 13, 2023. The Department has made certain changes and clarifications in the final rule in response to public comments on the proposal and the testimony presented at the public hearings. The final rule narrows the contexts in which a covered recommendation will constitute ERISA fiduciary investment advice and makes clear that the test for fiduciary status is objective. Similarly, a new paragraph in the <span class='ag-highlight'>regulatory text confirms that sales recommendations that do not satisfy the objective test will not be treated as fiduciary advice, and that the mere provision of investment information or education, without an investment recommendation, is not advice within the meaning of the rule.</span><p class='ag-annotation'>Well here you see we hae a very long long long long long long long and tedious tedious tedoius annotations explaining the text</p></div><div><p>Additionally, the final rule makes clear that the rule is focused on communications with persons with authority over plan investment decisions (including selecting investment options for participant-directed plans), rather than communications with financial services providers who do not have such authority. Accordingly, the rule excludes plan and IRA investment advice fiduciaries from the definition of a retirement investor. As a result, an asset manager does not render fiduciary advice simply by making recommendations to a financial professional or firm that, in turn, will render advice to retirement investors in a fiduciary capacity. The Department believes the final rule, with these revisions, appropriately defines an investment advice fiduciary to comport with reasonable investor expectations of trust and confidence.</p></p>
     </div>
     <div class="ag-text">
         <p> text <span class="ag-highlight">I shall possess within the veil,</span>ipsum lorem asdljlasdj;lajsdljfdsljflasjdf;ljds;lfjs;lfjl;asjdfl;jdsfljzsfl;jads;lfj;aldj  fdasjl;j;l fjadslkj  adjflasjf;l  lfjadlsfj lafjl aj;lfj;la </p>
