@@ -69,14 +69,16 @@
 
         .ag-highlight {
             background-color: #ffff99; /* Highlight color */
-            flex: 1; /* Takes up 50% of the container */
+        }
+
+        div.ag-annotation{
+            flex-basis: 50%; /* Takes up 50% of the container */
 
         }
 
-        /* Ensure elements that do not have highlight or annotation take full width */
-        .ag-text > p:not(.ag-highlight):not(.ag-annotation),
-        .ag-text > p:not(:has(.ag-highlight, .ag-annotation)) {
-            width: 100%;
+            div.ag-rule{
+            flex-basis: 50%; /* Takes up 50% of the container */
+
         }
 
 
@@ -88,12 +90,17 @@
         <p class="ag-label">Executive Summary</p>
     </div>
     <div class="ag-text">
+        <div class="ag-rule">
         <p>
             The Department is issuing a final rule defining an investment advice fiduciary for purposes of Title I and Title II of ERISA. The final rule defines when a person is a fiduciary in connection with providing advice to an investor saving for retirement through a workplace retirement plan or other type of retirement plan such as an IRA. <span class='ag-highlight'>Such retirement investors include participants and beneficiaries in workplace retirement plans, IRA owners and beneficiaries, as well as plan and IRA fiduciaries with authority or control with respect to the plan or IRA.</span>
-            <p class='ag-annotation'>The final summary text led with reference to IRA investors. The rule cites third quarter 2023 data from the Federal Reserve showing "IRAs held $13.0 trillion in assets, [while] private defined contribution plans held $8.4 trillion, and private defined benefit plans held $3.7 trillion in assets."
-            <br> <br>IRA investors are "projected to move $4.5 trillion from defined contribution plans to IRAs from 2022 through 2027," according to Cerulli data cited in the rule.</p>
         </p>
+        </div>
+        <div class='ag-annotation'>
+            <p>The final summary text led with reference to IRA investors. The rule cites third quarter 2023 data from the Federal Reserve showing "IRAs held $13.0 trillion in assets, [while] private defined contribution plans held $8.4 trillion, and private defined benefit plans held $3.7 trillion in assets."
+            <br> <br>IRA investors are "projected to move $4.5 trillion from defined contribution plans to IRAs from 2022 through 2027," according to Cerulli data.</p>
+        </div> 
     </div>
+
         <p>
             Under the final rule, a person is an investment advice fiduciary if they provide a recommendation in one of the following contexts:
         </p>
@@ -129,6 +136,7 @@
         </div>
         
     </ul>
+    <div>
         <p>
         The recommendation also must be provided &ldquo;for a fee or other compensation, direct or indirect&rdquo; as defined in the final rule.
         </p>
@@ -156,7 +164,9 @@
         </p>
         </div>
     <div class="ag-text">
-        <p>2023 for notice and public comment, and public hearings on the proposals were held on December 12 and 13, 2023. The Department has made certain changes and clarifications in the final rule in response to public comments on the proposal and the testimony presented at the public hearings. The final rule narrows the contexts in which a covered recommendation will constitute ERISA fiduciary investment advice and makes clear that the test for fiduciary status is objective. Similarly, a new paragraph in the <span class='ag-highlight'>regulatory text confirms that sales recommendations that do not satisfy the objective test will not be treated as fiduciary advice, and that the mere provision of investment information or education, without an investment recommendation, is not advice within the meaning of the rule.</span><p class='ag-annotation'>Well here you see we hae a very long long long long long long long and tedious tedious tedoius annotations explaining the text</p></div><div><p>Additionally, the final rule makes clear that the rule is focused on communications with persons with authority over plan investment decisions (including selecting investment options for participant-directed plans), rather than communications with financial services providers who do not have such authority. Accordingly, the rule excludes plan and IRA investment advice fiduciaries from the definition of a retirement investor. As a result, an asset manager does not render fiduciary advice simply by making recommendations to a financial professional or firm that, in turn, will render advice to retirement investors in a fiduciary capacity. The Department believes the final rule, with these revisions, appropriately defines an investment advice fiduciary to comport with reasonable investor expectations of trust and confidence.</p></p>
+        <p>2023 for notice and public comment, and public hearings on the proposals were held on December 12 and 13, 2023. The Department has made certain changes and clarifications in the final rule in response to public comments on the proposal and the testimony presented at the public hearings. The final rule narrows the contexts in which a covered recommendation will constitute ERISA fiduciary investment advice and makes clear that the test for fiduciary status is objective. Similarly, a new paragraph in the <span class='ag-highlight'>regulatory text confirms that sales recommendations that do not satisfy the objective test will not be treated as fiduciary advice, and that the mere provision of investment information or education, without an investment recommendation, is not advice within the meaning of the rule.</span></p>
+        <p class='ag-annotation'>Well here you see we hae a very long long long long long long long and tedious tedious tedoius annotations explaining the text</p></div>
+        <div><p>Additionally, the final rule makes clear that the rule is focused on communications with persons with authority over plan investment decisions (including selecting investment options for participant-directed plans), rather than communications with financial services providers who do not have such authority. Accordingly, the rule excludes plan and IRA investment advice fiduciaries from the definition of a retirement investor. As a result, an asset manager does not render fiduciary advice simply by making recommendations to a financial professional or firm that, in turn, will render advice to retirement investors in a fiduciary capacity. The Department believes the final rule, with these revisions, appropriately defines an investment advice fiduciary to comport with reasonable investor expectations of trust and confidence.</p>
     </div>
     <div class="ag-text">
         <p> text <span class="ag-highlight">I shall possess within the veil,</span>ipsum lorem asdljlasdj;lajsdljfdsljflasjdf;ljds;lfjs;lfjl;asjdfl;jdsfljzsfl;jads;lfj;aldj  fdasjl;j;l fjadslkj  adjflasjf;l  lfjadlsfj lafjl aj;lfj;la </p>
